@@ -8,8 +8,8 @@ export async function GET() {
 
     const svg = `
     <svg
-        width = "430"
-        height = "430"
+        width = "330"
+        height = "330"
         xmlns="http://www.w3.org/2000/svg"
     >
     <rect
@@ -20,15 +20,15 @@ export async function GET() {
     <image
         href="${pet.asset}"
         x="60"
-        y="180"
+        y="120"
         width="250"
         height="250"
     />
     <image
         href="${ASSETS.lighting}"
-        x="75"
+        x="70"
         y="-50"
-        width="290"
+        width="265"
         height="285"
         preserveAspectRatio = "none"
     />
