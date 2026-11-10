@@ -45,13 +45,15 @@ function calculateCurrentStreak(days: any[]){
     let streak = 0; 
 
     const reversed = [...days].reverse();
+
     let startIndex = 0; 
+
 
     if(reversed.length > 0 && reversed[0].contributionCount === 0){
         startIndex = 1; 
     }
     for (let i = startIndex; i< reversed.length; i++){
-        if(reversed[9].contributionCount > 0){
+        if(reversed[i].contributionCount > 0){
             streak ++;
         } else{
             break;
