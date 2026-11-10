@@ -5,6 +5,7 @@ import { ASSETS } from "@/lib/assets";
 export async function GET() {
     const stats = await getGitHubStats("dlcbeatrix");
     const pet = getPetState(stats.currentStreak);
+    
 
     const svg = `
     <svg
@@ -19,10 +20,10 @@ export async function GET() {
     />
     <image
         href="${pet.asset}"
-        x="60"
-        y="120"
-        width="250"
-        height="250"
+        x="${pet.x}"
+        y="${pet.y}"
+        width="${pet.width}"
+        height="${pet.height}"
     />
     <image
         href="${ASSETS.lighting}"
